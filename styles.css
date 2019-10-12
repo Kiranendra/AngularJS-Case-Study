@@ -1,0 +1,11 @@
+.logo-name{
+   background-image: linear-gradient(to bottom left,#66ccff,#66ffcc);
+   font-size:72px;
+   font-style: italic;
+   font-weight: bold;
+   color: white;
+}
+
+.products-display{
+   background-image: linear-gradient(to right,#00ccff,#00ff00);
+}

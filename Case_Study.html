@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>
+         AngularJS Case Study
+      </title>
+      <link rel="stylesheet" href="/Volumes/MyDrive/Projects/WEB/AngularJS-Case-Study/styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js" charset="utf-8"></script>
+      <script src="case_study_script.js" charset="utf-8"></script>
+   </head>
+   <body ng-app="app">
+
+      <div class="logo-name">
+         <center>
+            <p>www.ES.com</p>
+         </center>
+      </div>
+
+      <div class="products-display">
+
+         <!--Samsung Galaxy S10 plus-->
+         <div class="product1">
+            <h2>Samsung Galaxy S10+</h2>
+            <center>
+               <img src="samsung-galaxy-s10-plus-front.jpeg" alt="Front Image">
+               <img src="samsung-galaxy-s10-plus-back.jpeg" alt="Back Image">
+            </center>
+            <br>
+            <b>Select Color: </b>
+            <select id="s10-product-color" onclick="s10colorFunc()">
+               <option value="S10-prism-blue">Prism Blue</option>
+               <option value="S10-prism-white">Prism White</option>
+            </select>
+            <b>Select Storage: </b>
+            <select id="s10-product-storage" onclick="s10memoryFunc()">
+               <option value="S10-128GB">128GB</option>
+               <option value="S10-512GB">512GB</option>
+            </select>
+            <b>Select RAM: </b>
+            <select id="s10-product-ram" onclick="s10ramFunc()">
+               <option value="S10-8GB">8GB</option>
+               <option value="S10-12GB">12GB</option>
+            </select>
+            <h3 ng-controller="s10ctrl">Total Price: Rs. {{total_S10}}</h3>
+
+         </div>
+
+         <hr>
+
+         <!--Vivo Z1 Pro-->
+         <div class="product2">
+            <h2>Vivo Z1 Pro</h2>
+            <center>
+               <img src="vivo-z1-pro-front.jpeg" alt="Front Image">
+               <img src="vivo-z1-pro-back.jpeg" alt="Back Image">
+            </center>
+            <br>
+            <b>Select Color: </b>
+            <select id="vz1-product-color" onclick="vz1colorFunc()">
+               <option value="vz1-sonic-black">Sonic Black</option>
+               <option value="vz1-sonic-blue">Sonic Blue</option>
+            </select>
+            <b>Select Storage: </b>
+            <select id="vz1-product-storage" onclick="vz1memoryFunc()">
+               <option value="vz1-64GB">64GB</option>
+               <option value="vz1-128GB">128GB</option>
+            </select>
+            <b>Select RAM: </b>
+            <select id="vz1-product-ram" onclick="vz1ramFunc()">
+               <option value="vz1-4GB">4GB</option>
+               <option value="vz1-6GB">6GB</option>
+            </select>
+            <h3 ng-controller="vz1ctrl">Total Price: Rs. {{total_vz1}}</h3>
+
+         </div>
+
+         <hr>
+
+         <!--Apple iPhone 7-->
+         <div class="product3">
+            <h2>Apple iPhone 7</h2>
+            <center>
+               <img src="apple-iphone-7-front.jpeg" alt="Front Image">
+               <img src="apple-iphone-7-back.jpeg" alt="Back Image">
+            </center>
+            <br>
+            <b>Select Color: </b>
+            <select id="i7-product-color" onclick="i7colorFunc()">
+               <option value="i7-gold">Gold</option>
+               <option value="i7-red">Red</option>
+            </select>
+            <b>Select Storage: </b>
+            <select id="i7-product-storage" onclick="i7memoryFunc()">
+               <option value="i7-32GB">32GB</option>
+               <option value="i7-128GB">128GB</option>
+            </select>
+            <b>Select RAM: </b>
+            <select id="i7-product-ram" onclick="i7ramFunc()">
+               <option value="i7-2gb">2GB</option>
+            </select>
+            <h3 ng-controller="i7ctrl">Total Price: Rs. {{total_i7}}</h3>
+
+         </div>
+
+         <hr>
+
+         <!--Oppo find X-->
+         <div class="product4">
+            <h2>Oppo Find X</h2>
+            <center>
+               <img src="oppo-find-x-front.jpeg" alt="Front Image">
+               <img src="oppo-find-x-back.jpeg" alt="Back Image">
+            </center>
+            <br>
+            <b>Select Color: </b>
+            <select id="fx-product-color" onclick="fxcolorFunc()">
+               <option value="fx-glacier-blue">Glacier Blue</option>
+               <option value="fx-bordeaux-red">Bordeaux Red</option>
+            </select>
+            <b>Select Storage: </b>
+            <select id="fx-product-storage" onclick="fxmemoryFunc()">
+               <option value="fx-256GB">256GB</option>
+            </select>
+            <b>Select RAM: </b>
+            <select id="fx-product-ram" onclick="fxramFunc()">
+               <option value="fx-8GB">8GB</option>
+            </select>
+            <h3 ng-controller="fxctrl">Total Price: Rs. {{total_fx}}</h3>
+
+         </div>
+
+         <hr>
+
+         <!--Redmi k20 pro-->
+         <div class="product5">
+            <h2>Redmi K20 Pro</h2>
+            <center>
+               <img src="redmi-k20-pro-front.jpeg" alt="Front Image">
+               <img src="redmi-k20-pro-back.jpeg" alt="Back Image">
+            </center>
+            <br>
+            <b>Select Color: </b>
+            <select id="k20-product-color" onclick="k20colorFunc()">
+               <option value="k20-glacier-blue">Glacier Blue</option>
+               <option value="k20-carbon-black">Carbon Black</option>
+            </select>
+            <b>Select Storage: </b>
+            <select id="k20-product-storage" onclick="k20memoryFunc()">
+               <option value="k20-128GB">128GB</option>
+               <option value="k20-256GB">256GB</option>
+            </select>
+            <b>Select RAM: </b>
+            <select id="k20-product-ram" onclick="k20ramFunc()">
+               <option value="k20-6GB">6GB</option>
+               <option value="k20-8GB">8GB</option>
+            </select>
+            <h3 ng-controller="k20ctrl">Total Price: Rs. {{total_k20}}</h3>
+
+         </div>
+
+         <hr>
+
+      </div>
+
+   </body>
+</html>
