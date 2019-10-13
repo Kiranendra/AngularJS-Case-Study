@@ -5,8 +5,8 @@
       <title>
          AngularJS Case Study
       </title>
-      <link rel="stylesheet" href="/Volumes/MyDrive/Projects/WEB/AngularJS-Case-Study/styles.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js" charset="utf-8"></script>
       <script src="case_study_script.js" charset="utf-8"></script>
    </head>
    <body ng-app="app">
@@ -28,20 +28,15 @@
             </center>
             <br>
             <b>Select Color: </b>
-            <select id="s10-product-color" onclick="s10colorFunc()">
-               <option value="S10-prism-blue">Prism Blue</option>
-               <option value="S10-prism-white">Prism White</option>
+            <select ng-controller='s10colorsctrl' ng-model="s10colormodel" ng-options="x for x in s10colors" ng-change='s10colorsFun()'>
             </select>
             <b>Select Storage: </b>
-            <select id="s10-product-storage" onclick="s10memoryFunc()">
-               <option value="S10-128GB">128GB</option>
-               <option value="S10-512GB">512GB</option>
+            <select ng-controller='s10memoryctrl' ng-model="s10memorymodel" ng-options="x for x in s10memory" ng-change='s10memoryFun()'>
             </select>
             <b>Select RAM: </b>
-            <select id="s10-product-ram" onclick="s10ramFunc()">
-               <option value="S10-8GB">8GB</option>
-               <option value="S10-12GB">12GB</option>
+            <select ng-controller='s10ramctrl' ng-model="s10rammodel" ng-options="x for x in s10ram" ng-change='s10ramFun()'>
             </select>
+
             <h3 ng-controller="s10ctrl">Total Price: Rs. {{total_S10}}</h3>
 
          </div>
@@ -57,20 +52,15 @@
             </center>
             <br>
             <b>Select Color: </b>
-            <select id="vz1-product-color" onclick="vz1colorFunc()">
-               <option value="vz1-sonic-black">Sonic Black</option>
-               <option value="vz1-sonic-blue">Sonic Blue</option>
+            <select ng-controller='vz1colorsctrl' ng-model="vz1colormodel" ng-options="x for x in vz1colors" ng-change='vz1colorsFun()'>
             </select>
             <b>Select Storage: </b>
-            <select id="vz1-product-storage" onclick="vz1memoryFunc()">
-               <option value="vz1-64GB">64GB</option>
-               <option value="vz1-128GB">128GB</option>
+            <select ng-controller='vz1memoryctrl' ng-model="vz1memorymodel" ng-options="x for x in vz1memory" ng-change='vz1memoryFun()'>
             </select>
             <b>Select RAM: </b>
-            <select id="vz1-product-ram" onclick="vz1ramFunc()">
-               <option value="vz1-4GB">4GB</option>
-               <option value="vz1-6GB">6GB</option>
+            <select ng-controller='vz1ramctrl' ng-model="vz1rammodel" ng-options="x for x in vz1ram" ng-change='vz1ramFun()'>
             </select>
+
             <h3 ng-controller="vz1ctrl">Total Price: Rs. {{total_vz1}}</h3>
 
          </div>
@@ -86,19 +76,15 @@
             </center>
             <br>
             <b>Select Color: </b>
-            <select id="i7-product-color" onclick="i7colorFunc()">
-               <option value="i7-gold">Gold</option>
-               <option value="i7-red">Red</option>
+            <select ng-controller='i7colorsctrl' ng-model="i7colormodel" ng-options="x for x in i7colors" ng-change='i7colorsFun()'>
             </select>
             <b>Select Storage: </b>
-            <select id="i7-product-storage" onclick="i7memoryFunc()">
-               <option value="i7-32GB">32GB</option>
-               <option value="i7-128GB">128GB</option>
+            <select ng-controller='i7memoryctrl' ng-model="i7memorymodel" ng-options="x for x in i7memory" ng-change='i7memoryFun()'>
             </select>
             <b>Select RAM: </b>
-            <select id="i7-product-ram" onclick="i7ramFunc()">
-               <option value="i7-2gb">2GB</option>
+            <select ng-controller='i7ramctrl' ng-model="i7rammodel" ng-options="x for x in i7ram" ng-change='i7ramFun()'>
             </select>
+
             <h3 ng-controller="i7ctrl">Total Price: Rs. {{total_i7}}</h3>
 
          </div>
@@ -114,18 +100,17 @@
             </center>
             <br>
             <b>Select Color: </b>
-            <select id="fx-product-color" onclick="fxcolorFunc()">
-               <option value="fx-glacier-blue">Glacier Blue</option>
-               <option value="fx-bordeaux-red">Bordeaux Red</option>
+            <select ng-controller='fxcolorsctrl' ng-model="fxcolormodel" ng-options="x for x in fxcolors" ng-change='fxcolorsFun()'>
             </select>
+
             <b>Select Storage: </b>
-            <select id="fx-product-storage" onclick="fxmemoryFunc()">
-               <option value="fx-256GB">256GB</option>
+            <select ng-controller='fxmemoryctrl' ng-model="fxmemorymodel" ng-options="x for x in fxmemory" ng-change='fxmemoryFun()'>
             </select>
+
             <b>Select RAM: </b>
-            <select id="fx-product-ram" onclick="fxramFunc()">
-               <option value="fx-8GB">8GB</option>
+            <select ng-controller='fxramctrl' ng-model="fxrammodel" ng-options="x for x in fxram" ng-change='fxramFun()'>
             </select>
+
             <h3 ng-controller="fxctrl">Total Price: Rs. {{total_fx}}</h3>
 
          </div>
@@ -141,20 +126,17 @@
             </center>
             <br>
             <b>Select Color: </b>
-            <select id="k20-product-color" onclick="k20colorFunc()">
-               <option value="k20-glacier-blue">Glacier Blue</option>
-               <option value="k20-carbon-black">Carbon Black</option>
+            <select ng-controller='k20colorsctrl' ng-model="k20colormodel" ng-options="x for x in k20colors" ng-change='k20colorsFun()'>
             </select>
+
             <b>Select Storage: </b>
-            <select id="k20-product-storage" onclick="k20memoryFunc()">
-               <option value="k20-128GB">128GB</option>
-               <option value="k20-256GB">256GB</option>
+            <select ng-controller='k20memoryctrl' ng-model="k20memorymodel" ng-options="x for x in k20memory" ng-change='k20memoryFun()'>
             </select>
+
             <b>Select RAM: </b>
-            <select id="k20-product-ram" onclick="k20ramFunc()">
-               <option value="k20-6GB">6GB</option>
-               <option value="k20-8GB">8GB</option>
+            <select ng-controller='k20ramctrl' ng-model="k20rammodel" ng-options="x for x in k20ram" ng-change='k20ramFun()'>
             </select>
+
             <h3 ng-controller="k20ctrl">Total Price: Rs. {{total_k20}}</h3>
 
          </div>
