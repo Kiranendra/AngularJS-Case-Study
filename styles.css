@@ -1,11 +1,27 @@
+body{
+   padding: 1;
+   margin: 9;
+}
+
 .logo-name{
    background-image: linear-gradient(to bottom left,#66ccff,#66ffcc);
    font-size:72px;
    font-style: italic;
-   font-weight: bold;
-   color: white;
+   color: #ffffff;
+   margin-bottom: -72px;
 }
 
 .products-display{
-   background-image: linear-gradient(to right,#00ccff,#00ff00);
+   background-image: linear-gradient(to bottom right,#00ccff,#00ff00);
+}
+
+#note{
+   color: #ff0000;
+   margin-top: 10px;
+   margin-bottom: -18px;
+}
+
+#space{
+   padding-left: 50px;
+   color: #ffffff;
 }
