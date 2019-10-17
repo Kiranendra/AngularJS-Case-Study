@@ -25,3 +25,16 @@ body{
    padding-left: 50px;
    color: #ffffff;
 }
+
+.add-cart-btn{
+   font-size: 12px;
+   font-style: italic;
+   font-weight: bold;
+   padding: 5px;
+   border-style: dashed;
+   border-color: #ffff00;
+   background-image: linear-gradient(to left, #ccffcc,#b3e6ff);
+   border-radius: 15px;
+   margin-left: 3em;
+   cursor: pointer;
+}
