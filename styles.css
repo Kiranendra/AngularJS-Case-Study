@@ -1,6 +1,6 @@
 body{
-   padding: 1;
-   margin: 9;
+   padding: 1px;
+   margin: 9px;
 }
 
 .logo-name{
@@ -9,6 +9,12 @@ body{
    font-style: italic;
    color: #ffffff;
    margin-bottom: -72px;
+}
+
+.logo-below{
+   display: flex;
+   margin: 0 auto;
+   padding-top: 10px;
 }
 
 .products-display{
@@ -37,4 +43,104 @@ body{
    border-radius: 15px;
    margin-left: 3em;
    cursor: pointer;
+}
+
+.go-to-cart{
+   position: fixed;
+   top: 40px;
+   right: 50px;
+}
+
+.go-to-cart-btn{
+   font-size: 18px;
+   font-style: italic;
+   font-weight: bold;
+   padding: 3px;
+   border-style: dashed;
+   border-color: #ff0000;
+   background-image: linear-gradient(to left, #ccffcc,#b3e6ff);
+   border-radius: 25px;
+   cursor: pointer;
+}
+
+#cart-head{
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 27px;
+   text-align: center;
+   font-style: oblique;
+   font-size: 3em;
+   font-family: serif;
+   font-weight: bold;
+   color: #ffffff;
+   cursor: none;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.cart-items-header{
+   max-width: 900px;
+   margin:0 auto;
+   display: flex;
+}
+
+#cart-item-name{
+   width: 40%;
+   font-weight: bold;
+   font-size: 1.25em;
+   color: #333;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid black;
+   margin-right: 1.5em;
+   padding-bottom: 10px;
+   margin-top: 10px;
+}
+
+#cart-item-qty{
+   width: 15%;
+   font-weight: bold;
+   font-size: 1.25em;
+   color: #333;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid black;
+   margin-right: 1.5em;
+   padding-bottom: 10px;
+   margin-top: 10px;
+}
+
+#cart-item-price{
+   width: 20%;
+   font-weight: bold;
+   font-size: 1.25em;
+   color: #333;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid black;
+   margin-right: 1.5em;
+   padding-bottom: 10px;
+   margin-top: 10px;
+}
+
+.cart-items-total{
+   max-width: 810px;
+   text-align: end;
+   margin: 0 auto;
+   margin-top: 36px;
+}
+
+#cart-total-name{
+   font-weight: bold;
+   font-size: 1.5em;
+   color: black;
+   margin-right: 20px;
+}
+
+#cart-total-price{
+   font-size: 1.2em;
+}
+
+#cart-amount{
+   color: #ff0000;
+   font-size: 1em;
 }

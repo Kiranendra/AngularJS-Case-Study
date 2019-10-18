@@ -5,7 +5,7 @@
          AngularJS Case Study
       </title>
       <link rel="stylesheet" href="styles.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js" charset="utf-8"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js" charset="utf-8"></script>
       <script src="case_study_script.js" charset="utf-8" async></script>
    </head>
    <body ng-app="app">
@@ -140,6 +140,10 @@
 
          <hr>
 
+      </div>
+
+      <div class="go-to-cart" ng-controller='goToCartCtrl'>
+         <button type="button" class="go-to-cart-btn" ng-click='goToCart()'>Go to My Cart</button>
       </div>
 
    </body>

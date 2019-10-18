@@ -68,3 +68,9 @@ app.controller('k20ctrl',function($scope) {
       }
    };
 });
+
+app.controller('goToCartCtrl',function($scope) {
+   $scope.goToCart = function() {
+      location.href = 'cart.html';
+   };
+});

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>My Cart</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js" charset="utf-8"></script>
+      <script src="case_study_script.js" charset="utf-8" async></script>
+   </head>
+   <body ng-app="myCart">
+
+      <section>
+         <div>
+            <p id="cart-head">CART</p>
+         </div>
+
+         <div class="cart-items-header">
+            <span id="cart-item-name">ITEM</span>
+            <span id="cart-item-qty">QUANTITY</span>
+            <span id="cart-item-price">PRICE</span>
+         </div>
+
+         <div class="cart-items-display">
+         </div>
+
+         <div class="cart-items-total">
+            <strong id="cart-total-name">Total</strong>
+            <span id="cart-total-price">Rs.<span id="cart-amount"> {{cart_total_price}}</span></span>
+         </div>
+      </section>
+
+   </body>
+</html>
