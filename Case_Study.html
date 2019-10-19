@@ -4,7 +4,7 @@
       <title>
          AngularJS Case Study
       </title>
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="app_styles.css">
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js" charset="utf-8"></script>
       <script src="case_study_script.js" charset="utf-8" async></script>
    </head>
@@ -36,7 +36,7 @@
 
             <b id="space">RAM: 8GB</b>
 
-            <button class="add-cart-btn" type="button" ng-click="">Add to cart</button>
+            <button class="add-cart-btn" type="button" ng-controller="s10cartCtrl" ng-click="s10AddCart()">Add to cart</button>
 
             <h3>Total Price: Rs. {{total_S10}}</h3>
 
@@ -60,7 +60,7 @@
 
             <b id="space">RAM: 4GB</b>
 
-            <button class="add-cart-btn" type="button" ng-click="">Add to cart</button>
+            <button class="add-cart-btn" type="button" ng-controller="vz1cartCtrl" ng-click="vz1AddCart()">Add to cart</button>
 
             <h3>Total Price: Rs. {{total_vz1}}</h3>
 
@@ -84,7 +84,7 @@
 
             <b id="space">RAM: 2GB</b>
 
-            <button class="add-cart-btn" type="button" ng-click="">Add to cart</button>
+            <button class="add-cart-btn" type="button" ng-controller="i7cartCtrl" ng-click="i7AddCart()">Add to cart</button>
 
             <h3>Total Price: Rs. {{total_i7}}</h3>
 
@@ -108,7 +108,7 @@
 
             <b id="space">RAM: 8GB</b>
 
-            <button class="add-cart-btn" type="button" ng-click="">Add to cart</button>
+            <button class="add-cart-btn" type="button" ng-controller="fxcartCtrl" ng-click="fxAddCart()">Add to cart</button>
 
             <h3>Total Price: Rs. {{total_fx}}</h3>
 
@@ -132,7 +132,7 @@
 
             <b id="space">RAM: 6GB</b>
 
-            <button class="add-cart-btn" type="button" ng-click="">Add to cart</button>
+            <button class="add-cart-btn" type="button" ng-controller="k20cartCtrl" ng-click="k20AddCart()">Add to cart</button>
 
             <h3>Total Price: Rs. {{total_k20}}</h3>
 

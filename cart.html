@@ -3,9 +3,9 @@
    <head>
       <meta charset="utf-8">
       <title>My Cart</title>
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="cart_styles.css">
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js" charset="utf-8"></script>
-      <script src="case_study_script.js" charset="utf-8" async></script>
+      <script src="cart_script.js" charset="utf-8" async></script>
    </head>
    <body ng-app="myCart">
 
@@ -20,7 +20,16 @@
             <span id="cart-item-price">PRICE</span>
          </div>
 
-         <div class="cart-items-display">
+         <div class="cart-items-display" ng-controller="itemsDisplayCtrl">
+            <table>
+               <tbody ng-repeat='x in itemsInCart'>
+                  <tr>
+                     <td id="itemNameDisplay">{{x.itemname}}</td>
+                     <td id="itemQtyDisplay">1</td>
+                     <td id="itemPriceDisplay">{{x.itemprice}}</td>
+                  </tr>
+               </tbody>
+            </table>
          </div>
 
          <div class="cart-items-total" ng-controller='cartPriceCtrl'>
