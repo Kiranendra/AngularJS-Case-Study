@@ -1,5 +1,7 @@
 var app = angular.module('app', []);
+var cart = angular.module('myCart', []);
 var cart_items = [];
+
 app.controller('s10ctrl',function($scope) {
    $scope.s10colors=["Prism Blue","Prism White"];
    $scope.total_S10 = 0;
@@ -73,4 +75,8 @@ app.controller('goToCartCtrl',function($scope) {
    $scope.goToCart = function() {
       location.href = 'cart.html';
    };
+});
+
+cart.controller('cartPriceCtrl',function($scope) {
+   $scope.cart_total_price = 0;   
 });
