@@ -12,51 +12,6 @@
    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-.cart-items-header{
-   max-width: 900px;
-   margin:0 auto;
-   display: flex;
-}
-
-#cart-item-name{
-   width: 40%;
-   font-weight: bold;
-   font-size: 1.25em;
-   color: #333;
-   display: flex;
-   align-items: center;
-   border-bottom: 1px solid black;
-   margin-right: 1.5em;
-   padding-bottom: 10px;
-   margin-top: 10px;
-}
-
-#cart-item-qty{
-   width: 15%;
-   font-weight: bold;
-   font-size: 1.25em;
-   color: #333;
-   display: flex;
-   align-items: center;
-   border-bottom: 1px solid black;
-   margin-right: 1.5em;
-   padding-bottom: 10px;
-   margin-top: 10px;
-}
-
-#cart-item-price{
-   width: 20%;
-   font-weight: bold;
-   font-size: 1.25em;
-   color: #333;
-   display: flex;
-   align-items: center;
-   border-bottom: 1px solid black;
-   margin-right: 1.5em;
-   padding-bottom: 10px;
-   margin-top: 10px;
-}
-
 .cart-items-total{
    max-width: 810px;
    text-align: end;
@@ -80,29 +35,13 @@
    font-size: 1em;
 }
 
-.cart-items-display{
-   max-width: 900px;
-   margin:0 auto;
-   display: flex;
+.cartTable{
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+   border-spacing: 2px;
 }
 
-#itemNameDisplay{
-   font-size: 1.2em;
-   display: flex;
-   padding-bottom: 10px;
-   margin-top: 10px;
-}
-
-#itemQtyDisplay{
-   font-size: 1.2em;
-   display: flex;
-   padding-bottom: 10px;
-   margin-top: 10px;
-}
-
-#itemPriceDisplay{
-   font-size: 1.2em;
-   display: flex;
-   padding-bottom: 10px;
-   margin-top: 10px;
+.table-data{
+   padding: 5px;
 }

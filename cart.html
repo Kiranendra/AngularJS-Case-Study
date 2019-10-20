@@ -9,29 +9,28 @@
    </head>
    <body ng-app="myCart">
 
-      <section>
+      <section class="cart-header">
          <div>
             <p id="cart-head">CART</p>
          </div>
+      </section>
 
-         <div class="cart-items-header">
-            <span id="cart-item-name">ITEM</span>
-            <span id="cart-item-qty">QUANTITY</span>
-            <span id="cart-item-price">PRICE</span>
-         </div>
-
-         <div class="cart-items-display" ng-controller="itemsDisplayCtrl">
-            <table>
-               <tbody ng-repeat='x in itemsInCart'>
+      <section class="cart-body" ng-controller="itemsDisplayCtrl">
+            <table class="cartTable" border="4">
+               <thead>
                   <tr>
-                     <td id="itemNameDisplay">{{x.itemname}}</td>
-                     <td id="itemQtyDisplay">1</td>
-                     <td id="itemPriceDisplay">{{x.itemprice}}</td>
+                     <th>Name</th>
+                     <th>Price</th>
                   </tr>
-               </tbody>
+               </thead>
+                  <tr ng-repeat="item in itemsInCart">
+                     <td class="table-data"> {{item.itemname}} </td>
+                     <td class="table-data"> {{item.itemprice}} </td>
+                  </tr>
             </table>
-         </div>
+      </section>
 
+      <section  class="cart-footer">
          <div class="cart-items-total" ng-controller='cartPriceCtrl'>
             <strong id="cart-total-name">Total</strong>
             <span id="cart-total-price">Rs.<span id="cart-amount"> {{cart_total_price}}</span></span>
