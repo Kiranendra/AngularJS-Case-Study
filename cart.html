@@ -35,6 +35,12 @@
             <strong id="cart-total-name">Total</strong>
             <span id="cart-total-price">Rs.<span id="cart-amount"> {{cart_total_price}}</span></span>
          </div>
+         <div class="cart-purchase-btn" ng-controller='purchaseCtrl'>
+            <button id="purchase-btn" type="button" ng-click="displayPopup()">PURCHASE</button>
+         </div>
+         <div class="cart-remove-btn" ng-controller='removeCtrl'>
+            <button id="remove-btn" type="button" ng-click='clearCart()'>Clear Cart</button>
+         </div>
       </section>
 
    </body>

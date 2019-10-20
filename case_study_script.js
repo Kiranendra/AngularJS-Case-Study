@@ -9,9 +9,11 @@ app.controller('s10ctrl',function($scope) {
       if (s10col == "Prism Blue") {
          $scope.total_S10 = 73799;
          window.s10price = $scope.total_S10;
+         window.s10col = "Samsung Galaxy S10+ Prism Blue";
       } else {
          $scope.total_S10 = 73900;
          window.s10price = $scope.total_S10;
+         window.s10col = "Samsung Galaxy S10+ Prism White";
       }
    };
 });
@@ -30,9 +32,11 @@ app.controller('vz1ctrl',function($scope) {
       if (vz1col == "Sonic Blue") {
          $scope.total_vz1 = 12990;
          window.vz1price = $scope.total_vz1;
+         window.vz1col = "Vivo Z1 Pro Sonic Blue";
       } else {
          $scope.total_vz1 = 12990;
          window.vz1price = $scope.total_vz1;
+         window.vz1col = "Vivo Z1 Pro Sonic Black";
       }
    };
 });
@@ -51,9 +55,11 @@ app.controller('i7ctrl',function($scope) {
       if (i7col == "Gold") {
          $scope.total_i7 = 31999;
          window.i7price = $scope.total_i7;
+         window.i7col = "Apple iPhone 7 Gold";
       } else {
          $scope.total_i7 = 32999;
          window.i7price = $scope.total_i7;
+         window.i7col = "Apple iPhone 7 Red";
       }
    };
 });
@@ -72,9 +78,11 @@ app.controller('fxctrl',function($scope) {
       if (fxcol == "Glacier Blue") {
          $scope.total_fx = 58990;
          window.fxprice = $scope.total_fx;
+         window.fxcol = "Oppo Find X Glacier Blue";
       } else {
          $scope.total_fx = 58990;
          window.fxprice = $scope.total_fx;
+         window.fxcol = "Oppo Find X Bordeaux Red";
       }
    };
 });
@@ -93,9 +101,11 @@ app.controller('k20ctrl',function($scope) {
       if (k20col == "Glacier Blue") {
          $scope.total_k20 = 24999;
          window.k20price = $scope.total_k20;
+         window.k20col = "Redmi K20 Pro Glacier Blue";
       } else {
          $scope.total_k20 = 24999;
          window.k20price = $scope.total_k20;
+         window.k20col = "Redmi K20 Pro Carbon Black";
       }
    };
 });
